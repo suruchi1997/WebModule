@@ -1,0 +1,33 @@
+<!-- templates/edit_project.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Edit Project</title>
+</head>
+<body>
+      {% include 'header1.html' %}
+      {% include 'header.html' %}
+    <div class="container">
+        <h2>Edit Project</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.name.label() }}
+                {{ form.name(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.date.label() }}
+                {{ form.date(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.image.label() }}
+                {{ form.image() }}
+            </div>
+            {{ form.submit(class="btn btn-primary") }}
+        </form>
+    </div>
+</body>
+</html>

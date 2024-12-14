@@ -1,0 +1,37 @@
+<!-- templates/edit_member.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Edit Member</title>
+</head>
+<body>
+   {% include 'header1.html' %}
+   {% include 'header.html' %}
+    <div class="container">
+        <h2>Edit Member</h2>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.name.label() }}
+                {{ form.name(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.email.label() }}
+                {{ form.email(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.designation.label() }}
+                {{ form.designation(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.occupation.label() }}
+                {{ form.occupation(class="form-control") }}
+            </div>
+            {{ form.submit(class="btn btn-primary") }}
+        </form>
+    </div>
+</body>
+</html>
