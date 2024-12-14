@@ -1,0 +1,237 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+/* styles.css */
+
+/* General form styling */
+body {
+    font-family: Arial, sans-serif;
+
+    background-color:#dee0f2;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Form header */
+h2 {
+    text-align: center;
+    color: black;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change this to your accent color */
+    outline: none;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+.btn {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text */
+    padding: 12px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+nav {
+    background-color: #333; /* Dark background for the nav */
+    padding: 10px 20px; /* Padding for the nav */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display items in a line */
+    justify-content: space-between; /* Evenly space items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Horizontal spacing between items */
+}
+
+nav ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 16px; /* Padding around links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Darker background on hover */
+    border-radius: 4px; /* Ensure the corners remain rounded */
+}
+
+/* Password input styling */
+input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding for better spacing */
+    margin: 10px 0; /* Margin to separate from other elements */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in total width */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Focus styling for password input */
+input[type="password"]:focus {
+    border-color: #007bff; /* Accent color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Error styling for password field (optional) */
+input[type="password"].error {
+    border-color: red; /* Red border for error */
+}
+/* style.css */
+
+/* Style the table with borders */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd; /* Table border */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Left-align text */
+}
+
+/* Add background color to table headers */
+.table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Add hover effect to table rows */
+.table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
