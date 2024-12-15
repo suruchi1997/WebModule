@@ -30,8 +30,8 @@
                     <td>{{ project.date}}</td>
                     <td><img src="{{ url_for('static', filename='uploads/'+project.image) }}" alt="Project Image" width="100"></td>
 
-                    <td><a href="{{ url_for('edit_member', id=project.id) }}"> Edit</a></td>
-                    <td><a href="{{ url_for('delete_member', id=project.id) }}">Delete</a></td>
+                    <td><a href="{{ url_for('edit_project', id=project.id) }}"> Edit</a></td>
+                    <td><a href="{{ url_for('delete_project', id=project.id) }}">Delete</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
