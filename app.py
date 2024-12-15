@@ -10,8 +10,7 @@ from flask import session
 # Initialize the Flask app
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'  # Replace with a random secret key
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Sherlock22@localhost/club_management'
-app.config["SQLALCHEMY_DATABASE_URI"]= "mysql+mysqlconnector://vwvpuvvjzr:abh$568hpt98k7NC@rcnmgra-server.mysql.database.azure.com/rcnmgra-database"
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Sherlock22@73.92.52.92/club_management'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
